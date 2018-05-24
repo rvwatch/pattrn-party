@@ -1,0 +1,150 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background-color: #2F2235;
+  position: relative;
+  height: 50px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  position: absolute;
+  line-height: 50px;
+  left: 30px;
+}
+
+.logo__blue {
+  color: #34D1D1;
+}
+
+.name {
+  position: absolute;
+  right: 30px;
+  color: #fff;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+/* .accordion {
+  width: 70%;
+  margin: 40px auto;
+  /* border: 1px solid #E0E1E1; 
+}
+
+.pattrn-title {
+  border-top: 1px solid grey; 
+  width: 100%;
+}
+
+.accordion--tabs--nav {
+  position: relative;
+}
+
+.accordion--tabs--nav li {
+  display: inline-block;
+  width: 25%;
+}
+
+.accordion--button {
+  margin: 20px auto;
+  width: 200px;
+  display: block;
+  background-color: #2F2235;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 10px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.accordion--tabs--article.active {
+  background-color: #fff; 
+  width: 100%;
+  border: 1px solid grey;
+}
+
+.accordion--tabs--article img {
+  max-width: 200px;
+}
+
+.accordion--tabs--article .accordion--tabs--article__content {
+  display: none;
+}
+
+.accordion--tabs--article.active .accordion--tabs--article__content {
+  display: block;
+}
+*/
+
+
+.accordion-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: 30px auto auto auto;
+}
+
+label {
+  background: #F2F2F2;
+  border: 1px solid #DADBDC;
+  padding: .7em 1em;
+  cursor: pointer;
+  z-index: 1;
+  width: 25%;
+  box-sizing: border-box;
+  text-align: center;
+  color:#9D9D9D;
+}
+
+div {
+  width: 100%;
+  margin-top: -1px;
+  padding: 1em;
+  border: 1px solid #DADBDC;
+  order: 1;
+}
+
+input[type=radio], div {
+  display: none;
+}
+input[type=radio]:checked + label {
+  background: #fff;
+  border-top: 1px solid #DADBDC;
+  border-right: 1px solid #DADBDC;
+  border-left: 1px solid #DADBDC;
+  border-bottom: 1px solid #fff;
+}
+input[type=radio]:checked + label + div {
+  display: block;
+}
+
+@media screen and (max-width: 470px) {
+
+  .accordion-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 30px auto auto auto;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  div {
+    order: 0;
+  }
+
+  input[type=radio]:checked + label {
+    width: 100%;
+  }
+}
+
+
